@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Storage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #121212;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 4rem;
+        }
+
+        .box {
+            width: 100%;
+            max-width: 1200px; /* Optional: Restricts max width */
+            height: 100px;
+            background-color: black;
+            margin-bottom: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid white;
+            color: white;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box" onclick="goToCodeSpace(1)">Algorithm 1</div>
+    <div class="box" onclick="goToCodeSpace(2)">Algorithm 2</div>
+    <div class="box" onclick="goToCodeSpace(3)">Algorithm 3</div>
+    <div class="box" onclick="goToCodeSpace(4)">Algorithm 4</div>
+
+    <script>
+        function goToCodeSpace(id) {
+            window.location.href = `https://yourcodespace.com/algorithm${id}`;
+        }
+    </script>
+
+</body>
+</html>
